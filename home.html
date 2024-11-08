@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <!-- Background Gradient and Clouds -->
+    <div class="gradient-background"></div>
+    <div class="clouds">
+        <img src="images/cloud1.png" alt="Cloud 1" class="cloud cloud1">
+        <img src="images/cloud2.png" alt="Cloud 2" class="cloud cloud2">
+        <img src="images/cloud3.png" alt="Cloud 3" class="cloud cloud3">
+    </div>
+
+    <div class="container">
+        <!-- Sidebar Navigation with Separate Images for Each Button -->
+        <div class="sidebar">
+            <a href="#about"><img src="images/about.png" alt="About Button" class="nav-button"></a>
+            <a href="#interests"><img src="images/interests.png" alt="Interests Button" class="nav-button"></a>
+            <a href="#projects"><img src="images/projects.png" alt="Projects Button" class="nav-button"></a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- About Section with Profile Picture, Introduction, and Social Media Links -->
+            <section id="about" class="tab-content">
+                <div class="about-content">
+                    <img src="images/pfp.jpeg" alt="Profile Picture" class="profile-picture">
+                    <div class="info-container">
+                        <img src = "images/abtme.png" alt = "About Me" class = "About">
+                        <p>My name is Deniel Nicole Salcedo but everyone calls me nics or nicole. I am currently a second year college student at Rizal Technological University and I am studying Bachelor of Science major in Information Technology.
+
+                            My current hobbies are very simple: watching films, playing games, listening to music, singing, and making crafts/art. I am also very passionate in writing. Whenever I finish watching a film or series, I always go to letterboxd to rate them and write down my reviews or thoughts. Writing short poems is included also, in fact, I have a hundreds of poem that I wrote on my notes app.
+                            
+                            Life, solitude, dreams, and admiration are the one's that I write about, but most the time, my muse has always been myself and the other people that are dearest to me. That is because I am a firm believer that I am just a fragment; a mosaic of everyone I've ever loved, even for a heartbeat.
+                            
+                            And this site is a compilation of all the fragments that completes and define me. I'll show you around!!</p>
+                    </div>
+
+                    <div class="socmed-buttons">
+                        <a href="https://facebook.com" class="social-button" target="_blank"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://instagram.com" class="social-button" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://spotify.com" class="social-button" target="_blank"><i class='bx bxl-spotify'></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="interests" class="tab-content">
+                <div class="interests-content">
+                    <!-- Photography Section -->
+                    <div class="section-container centered-container"> <!-- Added centered-container -->
+                        <img src = "images/photo.png" alt = "Photography" class = "Interests">
+                        <p>Photography, for me, is all about capturing moments that often go unnoticed. I love how a single photo can tell a story, evoke an emotion, or freeze a fleeting moment forever. Whether it's the play of light at sunset, the small details in nature, or candid expressions of people, I find myself drawn to the beauty in everyday life. Through my camera, I get to explore the world from different perspectives, and each shot becomes a way of expressing how I see and experience life.</p>
+                        <div class="photo-carousel">
+                            <img src="images/pt6.jpg" alt="Sample Photo 1">
+                            <img src="images/pt7.jpg" alt="Sample Photo 2">
+                            <img src="images/pt5.jpg" alt="Sample Photo 3">
+                            <img src="images/pt2.jpg" alt="Sample Photo 4">
+                        </div>
+                    </div>
+            
+                    <!-- Film Section -->
+                    <div class="section-container centered-container"> <!-- Added centered-container -->
+                        <img src = "images/films.png" alt = "Films" class = "Interests">
+                        <p>Watching films is my favorite pastime. It is a ritual that enriches my life in countless ways. It is where I experience a myriad of emotions and perspectives—narratives that are new but familiar to me. Films that are intricate is what defines me the most; audaciously bold but subtle.</p>
+                        <div class="carousel-pics">
+                            <img src="images/rev1.jpg" alt="Film Review 1">
+                            <img src="images/rev2.jpg" alt="Film Review 2">
+                            <img src="images/rev3.jpg" alt="Film Review 3">
+                            <img src="images/rev4.jpg" alt="Film Review 4">
+                            <img src="images/rev5.jpg" alt="Film Review 5">
+                            <img src="images/rev7.jpg" alt="Film Review 7">
+                            <img src="images/rev3.jpg" alt="Film Review 3">
+                        </div>
+                    </div>
+            
+                    <div class="section-container centered-container"> 
+                        <img src = "images/wrtng.png" alt = "Writing" class = "Interests">
+                        <p>Writing has always been my passion since I was little. It gives me clarity to write down my thoughts and articulate it into something that I will understand. For it never forced me to open up and say the things that I will regret later on, perhaps, it brings me a profound feeling where I can freely rewrite, reflect and undo the words that is uncertain to me.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="projects" class="tab-content">
+                <div class="projects-content centered-container"> 
+                    <div class="section-container">
+                        <img src = "images/prjcts.png" alt = "Projects" class = "Projects">
+                        <p>Here are some of the projects I've worked on...</p>
+            
+                        <div class="project-list">
+                            <div class="project-item">
+                                <img src="images/preview.jpg" alt="Project" class="project-cover">
+                                <div class="project-info">
+                                    <h3>Portfolio Using Carrd.co</h3>
+                                    <p>This project was implemented using drag and drop website builder.</p>
+                                    <a href="https://itsmenicole.carrd.co" target="_blank" class="view-button">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    <script>
+        document.querySelectorAll('.sidebar a').forEach(button => {
+            button.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+
+                document.querySelectorAll('.tab-content').forEach(tab => {
+                    tab.style.display = 'none';
+                });
+
+                document.getElementById(targetId).style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>

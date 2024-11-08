@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Background-->
+    <div class="gradient-background"></div>
+        
+        <div class="clouds">
+            <img src="images/cloud1.png" alt="Cloud 1" class="cloud cloud1">
+            <img src="images/cloud2.png" alt="Cloud 2" class="cloud cloud2">
+            <img src="images/cloud3.png" alt="Cloud 3" class="cloud cloud3">
+          </div>
+        
+    <!--Login Form-->
+        <div class="wrapper">
+            <img src="images/logo.png" class="logo" alt="Logo">
+
+            <form class="login-form">
+                <div class="field">
+                    <img src="images/username.png" class="icon" alt="Username Icon">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="field">
+                    <img src="images/password.png" class="icon" alt="Password Icon">
+                    <input type="password" placeholder="Password" required>
+                </div>
+
+                <!--Login Button-->
+                <div class="login-container">
+                    <img src="images/login.png" class="login-button" alt="Login Button" usemap="#loginMap">
+                    <map name="loginMap">
+                        <area shape="rect" coords="40,13,267,131" href="home.html" alt="Login">
+                    </map>
+                </div>
+            </div>
+</body>
+</html>
